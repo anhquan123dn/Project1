@@ -1,7 +1,23 @@
-@media (max-width:739px) {
+@media (max-width:600px) {
     .topbar {
         .row {
             display: none;
+        }
+    }
+}
+
+@media (max-width:1023px) {
+    .grid.wide.header {
+        .row {
+            .header_item {
+                ul {
+                    li {
+                        nav {
+                            display: none;
+                        }
+                    }
+                }
+            }
         }
     }
 }
