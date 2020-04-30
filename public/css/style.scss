@@ -1,11 +1,16 @@
 $color-red:rgb(248, 70, 70);
+$color-red-alpha:rgba(248, 70, 70, 0.800);
 $color-gray:rgb(199, 199, 199);
+$color-gray-alpha:rgba(199, 199, 199, 0.8);
 $color-green:rgb(79, 182, 87);
+$color-green-alpha--high:rgba(79, 182, 87, 0.8);
 $color-white:white;
 $color-green-alpha:rgba(17, 86, 33, 0.408);
 $color-gold:rgb(253, 197, 91);
+$color-gold-alpha:rgba(253, 197, 91, 0.8);
 $color-orange:rgb(250, 158, 52);
 $color-blue:rgba(0, 179, 255, 0.993);
+$color-blue-alpha:rgba(0, 179, 255, 0.8);
 $color-violet:rgb(208, 120, 255);
 $color-alpha:rgba(255, 0, 0, 0);
 
@@ -154,6 +159,7 @@ a {
 .features--1 {
     display: block;
     text-align: center;
+    margin: 50px 0;
 
     header {
         margin: 20px 0;
@@ -433,4 +439,170 @@ a {
             }
         }
     }
+}
+
+.explore {
+    margin: 50px 0;
+
+    header {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    header+h1 {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .row {
+        .col {
+            position: relative;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .explore_info {
+            padding: 15px;
+            width: 60%;
+            height: auto;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            color: $color-white;
+
+            .explore_info_icon {
+                text-align: center;
+                font-size: 2.5em;
+            }
+
+            p {
+                font-size: 0.75em;
+                text-align: center;
+            }
+
+            .fas {
+                color: white;
+            }
+        }
+
+        .medical {
+            background-color: $color-red-alpha;
+        }
+
+        .education {
+            background-color: $color-green-alpha--high;
+        }
+
+        .animal {
+            background-color: $color-blue-alpha;
+        }
+
+        .health {
+            background-color: $color-gold-alpha;
+        }
+    }
+}
+
+.testimonials {
+    margin: 100px 0;
+    background-color: $color-gray-alpha;
+    padding: 100px 50px 100px 0;
+
+    .row {
+        .col {
+            position: relative;
+        }
+
+        img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+        }
+
+        header {
+            font-weight: bold;
+            color: $color-red;
+            margin: 20px 0;
+        }
+
+        h1 {
+            margin: 20px 0;
+            font-size: 3em;
+        }
+
+        .testimonials_author {
+            margin: 20px 0;
+
+            span {
+                font-weight: bold;
+                font-size: 2em;
+            }
+
+            .row {
+                justify-content: space-between;
+
+                .testimonials_author_btnslide {
+                    .testimonials_author_btnslide--previous {
+                        width: 50px;
+                        height: 50px;
+                        background-color: $color-red;
+                    }
+
+                    .testimonials_author_btnslide--next {
+                        width: 50px;
+                        height: 50px;
+                        background-color: $color-red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.client {
+    margin: 100px 0;
+
+    .client_form {
+        height: 100px;
+        background-color: $color-red;
+
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            line-height: 100px;
+            background-color: $color-red;
+            color: $color-white;
+        }
+
+        .client_form_more {
+            height: 100px;
+            background-color: $color-green;
+        }
+
+    }
+}
+
+.event {
+    margin: 50px 0;
+
+    header {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    header+h1 {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .row {
+        img {
+            width: 100%;
+        }
+    }
+
 }
