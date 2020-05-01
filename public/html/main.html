@@ -8,12 +8,12 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/public/css/swiper/swiper.min.css" />
     <link rel="stylesheet" href="/public/css/all.min.css" />
     <link rel="stylesheet" href="/public/css/grid.min.css" />
     <link rel="stylesheet" href="/public/css/style.min.css" />
     <link rel="stylesheet" href="/public/css/responsive.min.css" />
   </head>
-  <style></style>
   <body>
     <section class="banner">
       <section class="topbar">
@@ -550,21 +550,80 @@
       <h1>Upcoming Events</h1>
       <div class="grid wide">
         <div class="row">
-          <div class="col l-6">
-            <img
-              src="/public/img/Used-images/shutterstock-383432047.png"
-              alt=""
-            />
-          </div>
-          <div class="col l-6">
-            <img
-              src="/public/img/Used-images/shutterstock-1070280104.png"
-              alt=""
-            />
+          <div class="col l-6 l-o-3">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="/public/img/Used-images/shutterstock-383432047.png"
+                    alt=""
+                  />
+                  <div class="event_item">
+                    <div class="row">
+                      <div class="col l-3 event_item_time">
+                        <div class="i1">
+                          <p>
+                            <span class="event_item_time_day">25</span>
+                            <span class="event_item_time_month">Oct</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col l-9 event_item_title">
+                        <p>
+                          <span class="far fa-clock"></span> 12.00 AM
+                          <span class="fas fa-globe"></span> Buffalo,NY
+                        </p>
+                        <h1>
+                          Education For Children
+                        </h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/public/img/Used-images/shutterstock-1075641503.png"
+                    alt=""
+                  />
+                  <div class="event_item">
+                    <div class="row">
+                      <div class="col l-3 event_item_time">
+                        <div class="i2">
+                          <p>
+                            <span class="event_item_time_day">25</span>
+                            <span class="event_item_time_month">Oct</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col l-9 event_item_title">
+                        <p>
+                          <span class="far fa-clock"></span> 12.00 AM
+                          <span class="fas fa-globe"></span> Buffalo,NY
+                        </p>
+                        <h1>
+                          Clean Water For Child
+                        </h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-container-btn">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next">
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="swiper-button-prev">
+                  <i class="fas fa-arrow-left"></i>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
   </body>
   <script src="/public/js/all.min.js"></script>
+  <script src="/public/css/swiper/swiper.min.js"></script>
+  <script src="/public/js/main.js"></script>
 </html>

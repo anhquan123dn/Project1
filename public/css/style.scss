@@ -606,4 +606,86 @@ a {
         }
     }
 
+    .swiper-container-btn {
+        width: 150px;
+        height: 30px;
+        position: relative;
+        margin: 20px auto;
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: $color-red;
+            font-size: 2em;
+        }
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            content: '';
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .swiper-pagination {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: $color-red;
+        }
+    }
+
+    .swiper-slide {
+        position: relative;
+    }
+
+    .event_item {
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        bottom: 4px;
+        background-color: $color-white;
+        width: 400px;
+        padding: 15px;
+
+        .event_item_time {
+            text-align: center;
+
+            div {
+                margin: auto 0;
+                width: 65px;
+                height: 65px;
+                color: $color-white;
+            }
+
+            p {
+                .event_item_time_day {
+                    font-size: 2em;
+                    font-weight: bold;
+                }
+
+                .event_item_time_month {
+                    top: -10px;
+                    position: relative;
+                    font-size: 1.2em;
+                }
+            }
+
+
+
+        }
+
+        .event_item_title {
+            margin: auto 0;
+        }
+
+        .i1 {
+            border-radius: 100%;
+            background-color: $color-red;
+        }
+
+        .i2 {
+            border-radius: 100%;
+            background-color: $color-green;
+        }
+    }
 }
