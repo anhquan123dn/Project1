@@ -4,7 +4,7 @@ $color-red-alpha:rgba(248, 70, 70, 0.800);
 $color-gray:rgb(199, 199, 199);
 $color-gray-alpha:rgba(199, 199, 199, 0.8);
 $color-green:rgb(79, 182, 87);
-$color-green-alpha--high:rgba(79, 182, 87, 0.8);
+$color-green-alpha--high:rgba(79, 182, 87, 0.9);
 $color-white:white;
 $color-green-alpha:rgba(17, 86, 33, 0.408);
 $color-gold:rgb(253, 197, 91);
@@ -164,11 +164,11 @@ a {
 .title_bg_img {
     width: inherit;
     height: inherit;
-    overflow: hidden;
 
     img {
-        width: 100%;
-        height: auto;
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
     }
 
     .title_bg_img_overlay {
@@ -184,6 +184,11 @@ a {
 .title_bg {
     width: 100%;
     height: 950px;
+
+    .title_swiper-container {
+        width: inherit;
+        height: inherit;
+    }
 }
 
 .features--1 {
@@ -257,8 +262,21 @@ a {
     margin-top: 100px;
 
     .Wecannot_image {
+        overflow: hidden;
+
+        .wecannot-swiper-container {
+            width: 100%;
+            height: 750px;
+            position: relative;
+
+        }
+
         img {
             width: 100%;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: $color-red;
         }
     }
 
@@ -337,12 +355,49 @@ a {
         text-align: center;
     }
 
+    background-color: $color-gray-alpha;
+
     .row {
+
+
+        .features_item {
+            border-radius: 10px 10px 0 0;
+            background-color: $color-white;
+        }
+
         .features_item {
             margin: 20px 0;
+            position: relative;
+
+            .inner--red {
+                width: 100%;
+                height: 256px;
+                position: absolute;
+                background-color: $color-red-alpha;
+                border-radius: 10px 10px 0 0;
+                display: none;
+
+                .inner_link {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 100px;
+                    height: 100px;
+                    border: 2px dashed $color-white;
+                }
+
+                .inner_link:hover {
+                    background-color: $color-white;
+                    animation: animation-opacity 1s;
+                }
+            }
 
             img {
+                border-radius: 10px 10px 0 0;
                 width: 100%;
+                height: auto;
+                background-color: red;
             }
 
             .features_item_rangeslider {
@@ -667,6 +722,7 @@ a {
             background-color: $color-red;
         }
     }
+
 
     .swiper-slide {
         position: relative;

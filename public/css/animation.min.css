@@ -1,1 +1,1 @@
-@keyframes flip-vertical-right{0%{transform:rotateY(0)}to{transform:rotateY(180deg)}}@keyframes flip-vertical-back{0%{transform:rotateY(180deg)}to{transform:rotateY(0)}}
+@keyframes flip-vertical-right{0%{transform:rotateY(0)}to{transform:rotateY(180deg)}}@keyframes flip-vertical-back{0%{transform:rotateY(180deg)}to{transform:rotateY(0)}}@keyframes animation-opacity{0%{opacity:0}to{opacity:1}}

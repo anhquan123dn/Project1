@@ -45,3 +45,13 @@
         transform: rotateY(0);
     }
 }
+
+@keyframes animation-opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
