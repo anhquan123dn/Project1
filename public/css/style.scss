@@ -346,7 +346,7 @@ a {
     margin: 50px 0;
 
     header {
-        margin: 20px 0;
+        padding: 50px 0 10px;
         text-align: center;
     }
 
@@ -389,7 +389,7 @@ a {
 
                 .inner_link:hover {
                     background-color: $color-white;
-                    animation: animation-opacity 1s;
+                    animation: animation-opacity 1.5s;
                 }
             }
 
@@ -542,21 +542,28 @@ a {
 
     .row {
         .col {
+            width: 100%;
             position: relative;
+            height: 300px;
+            overflow: hidden;
         }
 
         img {
+            height: 100%;
             width: 100%;
+            object-fit: cover;
         }
 
+
+
         .explore_info {
-            padding: 13px;
-            width: 60%;
-            height: auto;
+            width: 300px - 17px;
+            height: inherit;
             position: absolute;
             top: 0;
             left: 50%;
             transform: translateX(-50%);
+            padding: 20px;
             color: $color-white;
 
             .explore_info_icon {
@@ -740,23 +747,28 @@ a {
 
         .event_item_time {
             text-align: center;
+            position: relative;
 
             div {
-                margin: auto 0;
-                width: 65px;
-                height: 65px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 70px;
+                height: 70px;
                 color: $color-white;
             }
 
             p {
+
                 .event_item_time_day {
+                    top: 8px;
                     font-size: 2em;
                     font-weight: bold;
+                    position: relative;
                 }
 
                 .event_item_time_month {
-                    top: -10px;
-                    position: relative;
                     font-size: 1.2em;
                 }
             }
@@ -772,6 +784,7 @@ a {
         .i1 {
             border-radius: 100%;
             background-color: $color-red;
+
         }
 
         .i2 {
